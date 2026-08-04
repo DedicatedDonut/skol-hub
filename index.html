@@ -5,45 +5,84 @@
 <title>Skol Hub</title>
 <style>
 body {
- font-family: -apple-system, BlinkMacSystemFont, sans-serif;
- background: #4f2683;
- color: white;
  margin: 0;
+ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+ background: #f4f4f7;
+ color: #222;
+}
+.hero {
+ background: linear-gradient(135deg, #4f2683, #1b1b1b);
+ color: white;
+ padding: 35px 20px;
+ border-radius: 0 0 25px 25px;
+}
+.hero h1 {
+ font-size: 36px;
+ margin: 0;
+}
+.hero p {
+ opacity: .9;
+}
+.container {
  padding: 20px;
 }
 .card {
  background: white;
- color: #222;
- border-radius: 16px;
+ border-radius: 20px;
  padding: 20px;
- margin-bottom: 20px;
+ margin-bottom: 18px;
+ box-shadow: 0 4px 12px rgba(0,0,0,.08);
 }
-h1 {
- font-size: 32px;
+.card h2 {
+ margin-top:0;
+ color:#4f2683;
 }
-h2 {
- color: #4f2683;
+.badge {
+ display:inline-block;
+ background:#4f2683;
+ color:white;
+ padding:6px 12px;
+ border-radius:20px;
+ font-size:13px;
 }
 </style>
 </head>
 <body>
+<div class="hero">
 <h1>🏈 Skol Hub</h1>
-<p>Minnesota Vikings Weekly Dashboard</p>
-<div class="card">
-<h2>📸 Weekly Photos</h2>
-<p>Latest Vikings photography will go here.</p>
+<p>Your personal Minnesota Vikings dashboard</p>
+<span class="badge">2026 Season</span>
 </div>
+
+<div class="container">
+<div class="card">
+<h2>📸 Weekly Photo Drop</h2>
+<p>Latest Vikings photography and wallpapers.</p>
+<button>Add Photos →</button>
+</div>
+
 <div class="card">
 <h2>⭐ Player Spotlight</h2>
-<p>Player of the week coming soon.</p>
+<p>Featured player:</p>
+<h3>J.J. McCarthy</h3>
+<p>Weekly performance, highlights, and news.</p>
 </div>
+
 <div class="card">
 <h2>📰 Vikings News</h2>
-<p>Weekly team updates.</p>
+<p>Latest team updates.</p>
 </div>
+
 <div class="card">
 <h2>📅 Schedule</h2>
-<p>Next Vikings game information.</p>
+<p>Next matchup and countdown.</p>
+</div>
+
+<div class="card">
+<h2>🏆 NFC North</h2>
+<p>Standings will appear here.</p>
+</div>
+
 </div>
 </body>
 </html>
