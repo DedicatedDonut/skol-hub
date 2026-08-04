@@ -7,82 +7,165 @@
 body {
  margin: 0;
  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
- background: #f4f4f7;
- color: #222;
-}
-.hero {
- background: linear-gradient(135deg, #4f2683, #1b1b1b);
+ background: #111111;
  color: white;
- padding: 35px 20px;
- border-radius: 0 0 25px 25px;
+}
+
+/* Header */
+.hero {
+ background: linear-gradient(135deg, #4f2683, #111111);
+ padding: 40px 22px 35px;
+ border-radius: 0 0 28px 28px;
 }
 .hero h1 {
- font-size: 36px;
+ font-size: 38px;
  margin: 0;
+ font-weight: 800;
 }
 .hero p {
- opacity: .9;
+ margin-top: 8px;
+ color: #dddddd;
+ font-size: 16px;
 }
+
+/* Main container */
 .container {
  padding: 20px;
 }
+
+/* Cards */
 .card {
- background: white;
+ background: #1c1c1e;
  border-radius: 20px;
  padding: 20px;
  margin-bottom: 18px;
- box-shadow: 0 4px 12px rgba(0,0,0,.08);
+ box-shadow: 0 5px 15px rgba(0,0,0,.25);
 }
 .card h2 {
- margin-top:0;
- color:#4f2683;
+ margin-top: 0;
+ font-size: 22px;
+ color: white;
 }
+.card p {
+ color: #cccccc;
+}
+
+/* Photo section */
+.featured-photo {
+ width: 100%;
+ border-radius: 16px;
+ margin-bottom: 12px;
+ display: block;
+ background: #333;
+}
+.photo-label {
+ font-size: 13px;
+ color: #aaaaaa;
+}
+
+/* Buttons */
+button {
+ background: #4f2683;
+ color: white;
+ border: none;
+ padding: 12px 18px;
+ border-radius: 12px;
+ font-size: 15px;
+}
+
+/* Small tags */
 .badge {
- display:inline-block;
- background:#4f2683;
- color:white;
- padding:6px 12px;
- border-radius:20px;
- font-size:13px;
+ display: inline-block;
+ background: #4f2683;
+ padding: 6px 12px;
+ border-radius: 20px;
+ font-size: 13px;
 }
+
+/* Footer */
+.footer {
+ text-align: center;
+ color: #777;
+ font-size: 12px;
+ padding: 20px;
+}
+
 </style>
 </head>
+
 <body>
+
 <div class="hero">
 <h1>🏈 Skol Hub</h1>
-<p>Your personal Minnesota Vikings dashboard</p>
-<span class="badge">2026 Season</span>
+<p>
+Minnesota Vikings Media Center
+</p>
+<span class="badge">
+2026 Season
+</span>
 </div>
 
 <div class="container">
+
 <div class="card">
-<h2>📸 Weekly Photo Drop</h2>
-<p>Latest Vikings photography and wallpapers.</p>
-<button>Add Photos →</button>
+<h2>📸 Featured Gallery</h2>
+<img
+class="featured-photo"
+src="photos/featured.jpg"
+alt="Minnesota Vikings">
+<p class="photo-label">
+Training Camp • Latest Update
+</p>
+<button>
+Open Gallery
+</button>
 </div>
+
 
 <div class="card">
 <h2>⭐ Player Spotlight</h2>
-<p>Featured player:</p>
 <h3>J.J. McCarthy</h3>
-<p>Weekly performance, highlights, and news.</p>
+<p>
+Weekly player highlights, performances, and team updates.
+</p>
 </div>
 
+
 <div class="card">
-<h2>📰 Vikings News</h2>
-<p>Latest team updates.</p>
+<h2>📰 Latest Vikings News</h2>
+<p>
+Team news, roster moves, and weekly storylines.
+</p>
 </div>
+
 
 <div class="card">
 <h2>📅 Schedule</h2>
-<p>Next matchup and countdown.</p>
+<p>
+Upcoming games and results.
+</p>
 </div>
+
 
 <div class="card">
 <h2>🏆 NFC North</h2>
-<p>Standings will appear here.</p>
+<p>
+Standings and division updates.
+</p>
+</div>
+
+<div class="card">
+<h2>🎥 Behind The Scenes</h2>
+<p>
+Practice, stadium, uniforms, equipment, and team moments.
+</p>
 </div>
 
 </div>
+
+<div class="footer">
+Skol Hub • Personal Vikings Dashboard
+</div>
+
 </body>
 </html>
